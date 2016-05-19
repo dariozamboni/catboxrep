@@ -197,8 +197,6 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-united.css" />
-    <Content Include="Content\Originali\bootstrap.css" />
-    <Content Include="Content\Originali\bootstrap.min.css" />
     <Content Include="Content\catbox.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\Site.css" />
