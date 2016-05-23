@@ -256,6 +256,8 @@
           <div class="col-md-12 col-sm-12">
          <div style="float: right;">
          
+   
+         
              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#delete-images">
              <i class="fa fa-times-circle-o" aria-hidden="true"></i>           
              DELETE IMAGES 
@@ -287,19 +289,34 @@
       
       <!--MODAL ===============================================================-->
 
-      <div id="delete-images" class="modal fade">
-        <div class="modal-dialog modal-lg">
+
+      
+      
+      <div class="modal fade" id="delete-images" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title">Source Code</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Delete Images</h4>
             </div>
             <div class="modal-body">
-              <pre></pre>
+              Are you sure to delete all immages on Catlive1 ?            </div>
+              
+              
+               <!--<div class="alert alert-dismissible alert-danger">-->
+              <div class="alert alert-danger ">
+                <!--<button type="button" class="close" data-dismiss="alert">&times;</button>-->
+                <strong>All Images</strong> successfully deleted.
+              </div>
+              
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-danger">DELETE ALL !</button>
             </div>
           </div>
         </div>
       </div>
+      
 
 	<!--FOOTER ===============================================================-->
       <footer>
