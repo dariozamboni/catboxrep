@@ -7,3 +7,22 @@
 .panel-title {
 	font-size: 2em;
 }
+
+.ss {
+
+	font-size: 120%;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.logo{
+	margin-bottom: 40px;
+	max-width: 240px;;
+}
+
+
+/*deprecated*/
+.cc {
+	background-color: silver;
+	height: 40px;
+}
