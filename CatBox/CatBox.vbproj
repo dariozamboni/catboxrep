@@ -183,6 +183,8 @@
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\images\catlogo.svg" />
+    <Content Include="Account\images\catlogo_whi.svg" />
     <Content Include="Account\Lockout.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Manage.aspx" />
