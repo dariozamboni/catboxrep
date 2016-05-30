@@ -18,6 +18,15 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+     <%--<link rel="stylesheet" href="content/bootstrap-united.css" media="screen">--%>
+     <!--font awesome-->
+    <link rel="stylesheet" href="content/font-awesome.css">
+    
+    <!--CATBOX CSS-->
+        <link rel="stylesheet" href="content/catbox.css">
+    
+                <asp:ContentPlaceHolder ID="Head" runat="server">
+            </asp:ContentPlaceHolder>
 </head>
 <body>
     <form runat="server">
@@ -42,7 +51,7 @@
             </Scripts>
         </asp:ScriptManager>
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+  <%--      <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -76,15 +85,126 @@
                     </asp:LoginView>
                 </div>
             </div>
+        </div>--%>
+          <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../">
+          <img src="images/catlogo_whi.svg" alt="" style="width: 180px;margin-right: 16px;"/>
+          </a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-        <div class="container body-content">
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            
+            <!--<li>
+              <a href="../help/">Help</a>
+            </li>-->
+            
+            
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="" target="_blank">Help</a></li>
+        
+          <!--<li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="themes">
+                <li><a href="../default/">Default</a></li>
+                <li class="divider"></li>
+                <li><a href="../cerulean/">Cerulean</a></li>
+                <li><a href="../cosmo/">Cosmo</a></li>
+                <li><a href="../cyborg/">Cyborg</a></li>
+                <li><a href="../darkly/">Darkly</a></li>
+                <li><a href="../flatly/">Flatly</a></li>
+                <li><a href="../journal/">Journal</a></li>
+                <li><a href="../lumen/">Lumen</a></li>
+                <li><a href="../paper/">Paper</a></li>
+                <li><a href="../readable/">Readable</a></li>
+                <li><a href="../sandstone/">Sandstone</a></li>
+                <li><a href="../simplex/">Simplex</a></li>
+                <li><a href="../slate/">Slate</a></li>
+                <li><a href="../spacelab/">Spacelab</a></li>
+                <li><a href="../superhero/">Superhero</a></li>
+                <li><a href="../united/">United</a></li>
+                <li><a href="../yeti/">Yeti</a></li>
+              </ul>
+            </li>-->
+            </ul>
+
+        </div>
+      </div>
+    </div>
+    
+
+            <div class="container">
+    
+  
+
+      <div class="page-header" id="banner">
+        <div class="row">
+        
+                  
+          
+        </div>
+        
+      </div>
+      
+      <!--HERE MY CONTENTS =================================-->
+      
+     <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+      
+      
+          
+          
+          
+          <div>
+           &nbsp;
+          </div>
+          
+          
+          
+      
+   
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+          <br /><br />
+
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">
+              <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>           
+              
+              Back to top</a></li>
+              
+            </ul>
+             <br /><br />
+           
+
+
+          </div>
+        </div>
+
+      </footer>
+
+
+    </div>
+
+   <%--     <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
                 <p>&copy; <%: DateTime.Now.Year %> - Applicazione ASP.NET</p>
             </footer>
-        </div>
+        </div>--%>
     </form>
 </body>
 </html>
