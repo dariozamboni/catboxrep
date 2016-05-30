@@ -21,6 +21,15 @@
 }
 
 
+.jumbotron {
+	padding: 4px;
+}
+
+.jumbotron .col-md-6 {
+	padding-left: 0;
+}
+
+
 /*deprecated*/
 .cc {
 	background-color: silver;
