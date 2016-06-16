@@ -3,11 +3,20 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h2><%: Title %>.</h2>
-
+   
     <div class="row">
         <div class="col-md-8">
-            <section id="loginForm">
+            <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title ss">
+          
+      		<i class="fa fa-user" aria-hidden="true"></i>          
+         
+          Login
+          </h3>
+        </div>
+        <div class="panel-body">
+    <section id="loginForm">
                 <div class="form-horizontal">
                     <h4>Utilizzare un account locale per eseguire l'accesso.</h4>
                     <hr />
@@ -18,8 +27,9 @@
                     </asp:PlaceHolder>
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="Email" CssClass="col-md-2 control-label">Posta elettronica</asp:Label>
-                        <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="Email" CssClass="form-control" TextMode="Email" />
+                     
+                           <div class="col-md-10">
+                            <asp:TextBox runat="server" ID="Email" CssClass="form-control  input-lg" placeholder="Username/ Email" TextMode="Email" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
                                 CssClass="text-danger" ErrorMessage="Il campo Posta elettronica è obbligatorio." />
                         </div>
@@ -27,7 +37,7 @@
                     <div class="form-group">
                         <asp:Label runat="server" AssociatedControlID="Password" CssClass="col-md-2 control-label">Password</asp:Label>
                         <div class="col-md-10">
-                            <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control" />
+                            <asp:TextBox runat="server" ID="Password" TextMode="Password" CssClass="form-control  input-lg"  placeholder="password" />
                             <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="Il campo Password è obbligatorio." />
                         </div>
                     </div>
@@ -54,7 +64,11 @@
                     --%>
                 </p>
             </section>
+      </div>
+      </div>
+        
         </div>
+
 
         <div class="col-md-4">
             <section id="socialLoginForm">

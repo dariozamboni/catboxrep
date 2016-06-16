@@ -15,10 +15,10 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <%--<webopt:bundlereference runat="server" path="~/Content/css" />--%>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-     <%--<link rel="stylesheet" href="content/bootstrap-united.css" media="screen">--%>
+     <link rel="stylesheet" href="content/bootstrap-united.css" media="screen">
      <!--font awesome-->
     <link rel="stylesheet" href="content/font-awesome.css">
     
@@ -90,7 +90,7 @@
       <div class="container">
         <div class="navbar-header">
           <a href="../">
-          <img src="images/catlogo_whi.svg" alt="" style="width: 180px;margin-right: 16px;"/>
+          <img src="/images/catlogo_whi.svg" alt="" style="width: 180px;margin-right: 16px;"/>
           </a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
