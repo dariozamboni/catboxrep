@@ -18,3 +18,6 @@ http://www.eyecon.ro/bootstrap-slider/
 
 bootstrap switch
 http://www.bootstrap-switch.org
+
+alert
+http://v4-alpha.getbootstrap.com/components/alerts/

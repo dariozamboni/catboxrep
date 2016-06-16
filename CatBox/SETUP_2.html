@@ -14,10 +14,10 @@
     
     <!--CATBOX CSS-->
         
+        <link rel="stylesheet" href="content/material-kit.css">
 		<link rel="stylesheet" href="content/catbox.css">
-    	<link rel="stylesheet" href="content/get-shit-done.css">
-
-    <!--<link rel="stylesheet" href="../assets/css/custom.min.css">-->
+    
+    <link rel="stylesheet" href="../assets/css/custom.min.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -25,14 +25,9 @@
     <![endif]-->
     
 
-   <!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
-     <script src="Scripts/jquery.min.js"></script>
-     <script src="Scripts/bootstrap.min.js"></script>
-     
-     <!--Larentis Switch-->
-       <script src="Scripts/gsdk-bootstrapswitch.js"></script>
-       <script src="Scripts/get-shit-done.js"></script>
-     
+
+    
+    
     
     
     
@@ -221,35 +216,102 @@
           
           <!--CREATIVE-TIM-->
           <div class="row">
-          here the code
+          		                <div class="col-sm-3">
+          		                    <div class="title">
+          		                        <h3>Checkboxes</h3>
+          		                    </div>
           
-          <input type="checkbox" checked data-toggle="switch" class="ct-green"/>
+          							<div class="checkbox">
+          								<label>
+          									<input type="checkbox" name="optionsCheckboxes">
+          									Unchecked
+          								</label>
+          							</div>
           
-          <input type="checkbox" data-toggle="switch" />
+          							<div class="checkbox">
+          								<label>
+          									<input type="checkbox" name="optionsCheckboxes" checked>
+          									Checked
+          								</label>
+          							</div>
           
+          							<div class="checkbox">
+          								<label>
+          									<input type="checkbox" name="optionsCheckboxes" disabled>
+          									Disabled Unchecked
+          								</label>
+          							</div>
           
-          <div class="switch"
+          							<div class="checkbox">
+          								<label>
+          									<input type="checkbox" name="optionsCheckboxes" disabled checked>
+          									Disabled Checked
+          								</label>
+          							</div>
           
-            data-on-label="<i class='fa fa-check'></i>"
+          		                </div>
           
-            data-off-label="<i class='fa fa-times'></i>">
+          		                <div class="col-sm-3">
+          		                    <div class="title">
+          		                        <h3>Radio Buttons</h3>
+          		                    </div>
           
-            <input type="checkbox" checked/>
+          							<div class="radio">
+          								<label>
+          									<input type="radio" name="optionsRadios">
+          									Radio is off
+          								</label>
+          							</div>
+          							<div class="radio">
+          								<label>
+          									<input type="radio" name="optionsRadios" checked="true">
+          									Radio is on
+          								</label>
+          							</div>
+          							<div class="radio">
+          								<label>
+          									<input type="radio" name="optionsRadiosDisabled" disabled>
+          									Disabled Radio is off
+          								</label>
+          							</div>
+          							<div class="radio">
+          								<label>
+          									<input type="radio" name="optionsRadiosDisabled" checked="true" disabled>
+          									Disabled Radio is on
+          								</label>
+          							</div>
+          		                </div>
           
-          </div>
+          						<div class="col-sm-3">
+          		                    <div class="title">
+          		                        <h3>Toggle Buttons</h3>
+          							</div>
           
-          <div class="switch"
+          							<div class="togglebutton">
+          				            	<label>
+          				                	<input type="checkbox" checked="">
+          									Toggle is on
+          				            	</label>
+          				            </div>
           
-            data-on-label="<i class='fa fa-check'></i>"
+          							<div class="togglebutton">
+          				            	<label>
+          				                	<input type="checkbox">
+          									Toggle is off
+          				            	</label>
+          				            </div>
+          		                </div>
           
-            data-off-label="<i class='fa fa-times'></i>">
+          						<div class="col-sm-3">
+          							<div class="title">
+          		                        <h3>Sliders</h3>
+          		                    </div>
           
-            <input type="checkbox"/>
+          							<div id="sliderRegular" class="slider"></div>
+          							<div id="sliderDouble" class="slider slider-info"></div>
+          						</div>
           
-          </div>
-          		                
-          
-        </div>
+          		            </div>
       
     
 
@@ -259,11 +321,32 @@
 
     
   </body>
+  <!--<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>-->
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
   
-     
-    
-    
+  	<!--TOGGLE AND CURSOR SLIDER core js ===================================-->
+  	<script src="Scripts/material.min.js"></script>
+  	<script src="Scripts/nouislider.min.js" type="text/javascript"></script>
+  	<script src="Scripts/material-kit.js" type="text/javascript"></script>
   	
+  	<script type="text/javascript">
+  	
+  			$().ready(function(){
+  				// the body of this function is in assets/material-kit.js
+  				materialKit.initSliders();
+  				$(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+  	
+  	            window_width = $(window).width();
+  	
+  	            if (window_width >= 768){
+  	                big_image = $('.wrapper > .header');
+  	
+  					$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+  				}
+  	
+  			});
+  		</script>
   
   
 </html>

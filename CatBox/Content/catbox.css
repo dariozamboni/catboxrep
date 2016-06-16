@@ -3,6 +3,10 @@
  */
 /* 
  * -------------------------- */
+ 
+ body {
+ 	background-color: white;
+ }
 
 .panel-title {
 	font-size: 2em;
@@ -27,6 +31,10 @@
 
 .jumbotron .col-md-6 {
 	padding-left: 0;
+}
+
+.progress {
+	  border-radius: 10px;
 }
 
 
