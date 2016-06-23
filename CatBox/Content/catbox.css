@@ -43,3 +43,17 @@
 	background-color: silver;
 	height: 40px;
 }
+
+.navbar-header {
+	height: 56px;
+	padding-top: 3px;
+}
+
+.navbar-header img {
+	height: 54px;
+}
+
+
+#navbar-main ul.nav.navbar-nav.navbar-right li a {
+	height: 58px;
+}
