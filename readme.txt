@@ -11,6 +11,15 @@ URL: http://catbox.azurewebsites.net/
 bootstrap template
 https://bootswatch.com/united/
 
+
+parametri di default:
+
+odd/even		ON
+channel 01	ON
+channel 02	OFF
+
+aggiungere flag di parametro modificato, quanto il client ha ricevuto la modifica lo mette = 0 come dropbox
+
 -------------------------------------
 
 bootstrap cursor slider
@@ -21,3 +30,5 @@ http://www.bootstrap-switch.org
 
 alert
 http://v4-alpha.getbootstrap.com/components/alerts/
+
+

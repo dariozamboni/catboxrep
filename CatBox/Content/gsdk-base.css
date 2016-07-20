@@ -1227,7 +1227,7 @@ input.ct-red + span.switch-left, input.ct-red + span + label + span.switch-right
 }
 
 input {
-	margin-bottom: 80px;
+	margin-bottom: 8px;
 }
 .col-sm-4 {
 	padding-left: 0;
